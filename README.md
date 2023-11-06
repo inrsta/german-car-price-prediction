@@ -51,7 +51,7 @@ The building of the train, valid and test datasets happens inside the `model_tra
 After making sure the model performs in a satisfactory manner, I save the model using the `pickle` module from Python.
 
 The notebook can also be converted to a Python file to be run like a module using the command:
-```python
+```bash
 jupyter nbconvert --to script model_training.ipynb
 ```
 
@@ -76,7 +76,7 @@ For this project, I have chosen Google [Cloud Run](https://cloud.google.com/run)
 Since this project is not necessarily focused on Operations, I deployed the app mostly manually, with the help of the UI.
 
 The first step is to download the Google Cloud CLI. You can get started [here](https://cloud.google.com/sdk/gcloud). After having installed the CLI and being able to use the command `gcloud` you can tag the image you created above to reference your Google Cloud Project. The commands would be: 
-```zsh
+```bash
 docker tag my-streamlit-app gcr.io/<google-cloud-project>/my-stream-lit-app
 docker push gcr.io/<google-cloud-project>/my-stream-lit-app
 ```
