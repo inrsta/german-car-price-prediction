@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.git
+.dockerignore
+.gitignore
+.DS_Store
+*.pkl
+*.ipynb
+data/
+app.py
