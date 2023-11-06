@@ -5,20 +5,20 @@ import pickle
 
 # Load your model
 with open(
-    r"/Users/inristaka/dev/machine-learning-zoomcamp/cohorts/2023/midterm-project/model/best_xgboost_model.pkl",
+    r"model/best_xgboost_model.pkl",
     "rb",
 ) as file:
     model = pickle.load(file)
 
 # Load the unique values for the categorical columns
 with open(
-    r"/Users/inristaka/dev/machine-learning-zoomcamp/cohorts/2023/midterm-project/data/unique_categorical_values.pkl",
+    r"model/unique_categorical_values.pkl",
     "rb",
 ) as handle:
     unique_categorical_values = pickle.load(handle)
 
 with open(
-    r"/Users/inristaka/dev/machine-learning-zoomcamp/cohorts/2023/midterm-project/model/dict_vectorizer.pkl",
+    r"model/dict_vectorizer.pkl",
     "rb",
 ) as dv_file:
     dv = pickle.load(dv_file)
